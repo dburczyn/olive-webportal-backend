@@ -25,14 +25,14 @@
       "required": true,
       "type": "string"
     },
-    "grids": {
-      "collection": "grid",
-      "via": "gridurls",
-      "dominant": true
-    },
     "enable": {
       "default": true,
       "type": "boolean"
+    },
+    "grids": {
+      "collection": "grid",
+      "dominant": true,
+      "via": "gridurls"
     }
   }
 }
