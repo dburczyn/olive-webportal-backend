@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "somegenericstuffs",
+  "info": {
+    "name": "somegenericstuff",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "projects": {
+      "collection": "project",
+      "via": "somegenericstuffs",
+      "dominant": true
+    },
+    "string": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

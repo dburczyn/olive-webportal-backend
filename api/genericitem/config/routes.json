@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/genericitems",
+      "handler": "Genericitem.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/genericitems/count",
+      "handler": "Genericitem.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/genericitems/:id",
+      "handler": "Genericitem.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/genericitems",
+      "handler": "Genericitem.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/genericitems/:id",
+      "handler": "Genericitem.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/genericitems/:id",
+      "handler": "Genericitem.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

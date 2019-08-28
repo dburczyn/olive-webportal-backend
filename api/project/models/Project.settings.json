@@ -44,6 +44,18 @@
       "required": true,
       "default": "default project description",
       "type": "text"
+    },
+    "genericitems": {
+      "collection": "genericitem",
+      "via": "projects"
+    },
+    "genericitem2S": {
+      "collection": "genericitem2",
+      "via": "projects"
+    },
+    "somegenericstuffs": {
+      "collection": "somegenericstuff",
+      "via": "projects"
     }
   }
 }

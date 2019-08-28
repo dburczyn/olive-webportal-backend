@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "genericitem2S",
+  "info": {
+    "name": "genericitem2",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "number": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "microservicecall": {
+      "type": "json"
+    },
+    "string": {
+      "type": "string"
+    },
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "genericitem2S",
+      "dominant": true
+    }
+  }
+}

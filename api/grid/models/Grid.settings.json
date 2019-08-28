@@ -23,7 +23,10 @@
     "type": {
       "default": "Project",
       "enum": [
-        "Project"
+        "Project",
+        "Job",
+        "Training",
+        "Event"
       ],
       "required": true,
       "type": "enumeration"

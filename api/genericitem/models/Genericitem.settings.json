@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "genericitems",
+  "info": {
+    "name": "genericitem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "string": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "name": {
+      "required": true,
+      "type": "string"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "genericitems",
+      "dominant": true
+    }
+  }
+}
